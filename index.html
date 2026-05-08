@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caroline Berger — Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; color: #1a1a1a; background: #fafafa; }
+
+    nav {
+      position: sticky; top: 0; background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 1rem 2rem; display: flex; gap: 2rem;
+      font-size: 0.85rem; z-index: 100; font-family: sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    nav a { text-decoration: none; color: #888; }
+    nav a:hover { color: #000; }
+
+    .hero {
+      max-width: 800px; margin: 0 auto;
+      padding: 100px 2rem 60px;
+    }
+    .hero h1 { font-size: 3.5rem; font-weight: normal; margin-bottom: 0.4rem; }
+    .hero .subtitle { font-size: 1.1rem; color: #666; font-family: sans-serif; margin-bottom: 1.5rem; }
+    .hero p { font-size: 1.15rem; line-height: 1.8; color: #444; max-width: 620px; }
+
+    .links { margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .links a {
+      display: inline-block; padding: 8px 18px;
+      border: 1px solid #ccc; border-radius: 4px;
+      font-family: sans-serif; font-size: 0.85rem;
+      text-decoration: none; color: #333;
+      transition: all 0.2s;
+    }
+    .links a:hover { background: #000; color: #fff; border-color: #000; }
+
+    section {
+      max-width: 800px; margin: 0 auto;
+      padding: 70px 2rem;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .label {
+      font-family: sans-serif; font-size: 0.75rem;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: #999; margin-bottom: 1rem;
+    }
+    h2 { font-size: 2rem; font-weight: normal; margin-bottom: 1.5rem; }
+    h3 { font-size: 1.3rem; margin-bottom: 0.75rem; margin-top: 2rem; }
+    p { font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 1rem; }
+
+    .stat-box {
+      background: #f0f0f0; padding: 1.5rem 2rem;
+      border-left: 4px solid #000; margin: 2rem 0;
+      font-size: 1.1rem; line-height: 1.7;
+    }
+
+    .tag {
+      display: inline-block; background: #f0f0f0;
+      padding: 5px 14px; border-radius: 20px;
+      font-size: 0.8rem; font-family: sans-serif;
+      margin: 4px 4px 4px 0; color: #555;
+    }
+
+    .card {
+      border: 1px solid #e0e0e0; padding: 1.5rem;
+      border-radius: 6px; margin-bottom: 1rem;
+      background: #fff;
+    }
+    .card h4 { font-size: 1rem; margin-bottom: 0.4rem; font-family: sans-serif; }
+    .card p { font-size: 0.95rem; margin: 0; }
+
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+    @media (max-width: 600px) { .team-grid { grid-template-columns: 1fr; } }
+
+    .team-card {
+      border: 1px solid #e0e0e0; padding: 1.2rem;
+      border-radius: 6px; background: #fff;
+    }
+    .team-card.highlight { border-color: #000; background: #f9f9f9; }
+    .team-card .name { font-family: sans-serif; font-size: 0.75rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem; }
+    .team-card h4 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .team-card p { font-size: 0.9rem; color: #555; margin: 0; }
+
+    footer {
+      text-align: center; padding: 3rem;
+      font-family: sans-serif; font-size: 0.85rem; color: #aaa;
+      border-top: 1px solid #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#project">Project</a>
+  <a href="#problem">Problem</a>
+  <a href="#solution">Solution</a>
+  <a href="#role">My Role</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="about">
+  <p class="label">Portfolio</p>
+  <h1>Caroline Berger</h1>
+  <p class="subtitle">Human Biology (Health & Disease) · Health Innovation Minor · USC '28</p>
+  <p>
+    I'm a pre-med sophomore at USC with a passion for where healthcare meets innovation.
+    From 280+ hours of clinical volunteering to behavioral research in AI-driven platforms,
+    I'm drawn to problems where human insight changes outcomes. Pittsburgh-raised, LA-based,
+    always curious.
+  </p>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/caroline-berger-42441431b" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/carolinerberger" target="_blank">Instagram</a>
+    <a href="mailto:crberger@usc.edu">Email Me</a>
+    <a href="https://mageewomens.org/for-researchers/education/college-summer-internship-program" target="_blank">2026 Internship ↗</a>
+  </div>
+</div>
+
+<!-- PROJECT OVERVIEW -->
+<section id="project">
+  <p class="label">Semester Project · A22</p>
+  <h2>MindAligned</h2>
+  <p>
+    MindAligned is an AI-powered co-founder matching platform that replaces surface-level
+    profile matching with deep behavioral compatibility analysis — capturing how founders
+    actually think, communicate, and handle conflict under pressure.
+  </p>
+  <p>
+    Built as part of USC's entrepreneurship curriculum, the project addresses one of
+    startups' most overlooked failure points: the human dynamic between co-founders.
+  </p>
+  <div>
+    <span class="tag">AI / Voice Analysis</span>
+    <span class="tag">Behavioral Psychology</span>
+    <span class="tag">Startup Ecosystem</span>
+    <span class="tag">USC Entrepreneurship</span>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <p class="label">The Problem</p>
+  <h2>Co-founder conflict is the #1 people problem in startups.</h2>
+  <div class="stat-box">
+    "The human element is the single greatest point of failure."<br/>
+    <strong>65% of startups fail due to co-founder conflict</strong> — not funding, not market fit.
+  </div>
+  <p>
+    Existing matching tools optimize for credentials: GitHub commits, LinkedIn titles,
+    résumé keywords. None of them answer the question that actually matters —
+    <em>can these two people build something together under real pressure?</em>
+  </p>
+  <p>
+    Our team observed this gap directly through USC's founder community, where 30 applicants
+    with strong credentials applied for 10 spots at an invite-only founder dinner — and no
+    existing tool could predict who would actually collaborate well.
+  </p>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+  <p class="label">The Solution</p>
+  <h2>Matching on resonance, not résumés.</h2>
+  <p>
+    MindAligned replaces the form with an AI voice interview. The platform captures
+    decision-making under pressure, responses to disagreement, and commitment signals —
+    then analyzes both <em>what</em> you say and <em>how</em> you say it.
+  </p>
+  <div class="card">
+    <h4>🧠 Behavioral DNA</h4>
+    <p>Extracts personality archetypes through voice tonality and linguistic patterns during pressure-test interviews.</p>
+  </div>
+  <div class="card">
+    <h4>📊 Conflict Predictive Modeling</h4>
+    <p>Uses data to simulate how two potential partners will handle equity disputes and scaling challenges before they arise.</p>
+  </div>
+  <div class="card">
+    <h4>🎯 Ranked Compatibility Output</h4>
+    <p>Surfaces co-founder matches mapped to risk tolerance, work style, commitment level, and conflict response.</p>
+  </div>
+</section>
+
+<!-- MY ROLE -->
+<section id="role">
+  <p class="label">My Contribution</p>
+  <h2>Research</h2>
+  <p>
+    My role on MindAligned was leading the research foundation that made the product credible.
+    I dove into behavioral psychology literature and AI linguistic analysis to understand
+    what signals actually predict interpersonal compatibility — and translated that into
+    frameworks the team could design and build around.
+  </p>
+  <h3>What I owned:</h3>
+  <div class="card">
+    <h4>Behavioral Psychology Research</h4>
+    <p>Investigated how personality archetypes, conflict styles, and communication patterns predict long-term co-founder compatibility.</p>
+  </div>
+  <div class="card">
+    <h4>AI Linguistic Analysis Patterns</h4>
+    <p>Researched how voice tone, hesitation, and linguistic consistency can surface deeper signals beyond what people explicitly say.</p>
+  </div>
+  <div class="card">
+    <h4>Research-to-Product Translation</h4>
+    <p>Synthesized academic findings into actionable input for the platform's interview design and matching algorithm logic.</p>
+  </div>
+
+  <h3>The Team</h3>
+  <div class="team-grid">
+    <div class="team-card highlight">
+      <div class="name">Caroline Berger — You are here</div>
+      <h4>Researcher</h4>
+      <p>Behavioral psychology & AI linguistic analysis research.</p>
+    </div>
+    <div class="team-card">
+      <div class="name">Dara Miao</div>
+      <h4>Strategy & Founder</h4>
+      <p>Concept, strategy, GTM, and community architecture.</p>
+    </div>
+    <div class="team-card">
+      <div class="name">Bella</div>
+      <h4>Business & Finance</h4>
+      <p>Financial modeling and market sizing.</p>
+    </div>
+    <div class="team-card">
+      <div class="name">Hallie</div>
+      <h4>Designer</h4>
+      <p>Visual language and UX of the MindAligned interface.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / BEYOND THE PROJECT -->
+<section>
+  <p class="label">Beyond the Project</p>
+  <h2>A little more about me</h2>
+  <div class="card">
+    <h4>🏥 Incoming Research Intern — Magee-Womens Research Institute (Summer 2026)</h4>
+    <p>Selected for a competitive college summer internship program at one of the nation's leading women's health research institutes.</p>
+  </div>
+  <div class="card">
+    <h4>🩺 COPE Health Scholars Program</h4>
+    <p>280+ clinical hours providing patient care and unit support at a hospital — my deepest look yet at healthcare from the inside.</p>
+  </div>
+  <div class="card">
+    <h4>📝 SPEC Magazine, Staff Writer</h4>
+    <p>Writing editorial content for USC's primary culture magazine, collaborating with a creative team on stories that matter to the campus community.</p>
+  </div>
+  <div class="card">
+    <h4>🎨 Mattress Factory Museum Teen Cooperative</h4>
+    <p>Led an art show and art fair at a Pittsburgh nonprofit to promote under-represented teen artists — one of my proudest projects before college.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="label">Get in Touch</p>
+  <h2>Let's connect.</h2>
+  <p>I'm always open to conversations about healthcare innovation, research, or anything in between.</p>
+  <div class="links">
+    <a href="mailto:crberger@usc.edu">crberger@usc.edu</a>
+    <a href="https://www.linkedin.com/in/caroline-berger-42441431b" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/carolinerberger" target="_blank">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Caroline Berger · USC '28
+</footer>
+
+</body>
+</html>
